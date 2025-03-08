@@ -1,4 +1,5 @@
 import defaultImageIcon from "./assets/defaultImageIcon.png"
+import profileImage from "./assets/profileImage.jpeg"
 import './App.css';
 import Carousel from "./components/Carousel/Carousel.jsx";
 import { DiJsBadge } from "react-icons/di";
@@ -7,6 +8,7 @@ import ImageInput from "./components/ImageInput/ImageInput.jsx";
 
 function App() {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const icons = ["java","spring","postgres","mongodb","js","nodejs","react","html","css"]
     const [email, setEmail] = useState("");
     const [tel, setTel] = useState("(..) .....-....")
     const [subject, setSubject] = useState("");
@@ -41,8 +43,21 @@ function App() {
 
   return (
     <div className="App">
+        <h1 id="title">PORTFÓLIO - MuriloAlvesGD</h1>
       <header className="App-header">
-          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuriloAlvesGD&layout=compact&hide_border=true&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=262629" alt="infos"/>
+          <div id="profile-card">
+              <img id="profile-img" src={profileImage} alt="foto de perfil"/>
+              <img id="typing-name" src="https://readme-typing-svg.herokuapp.com?font=&size=18&pause=1000&color=F7F7F7&background=FFFFFF00&center=true&vCenter=true&width=280&height=30&lines=Murilo+dos+Santos+Alves" alt="Typing SVG" />
+          </div>
+      <div id="git-img">
+          <img id="stats" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuriloAlvesGD&layout=compact&hide_border=true&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=2B2B2EFF" alt="infos"/>
+          <div>
+              {icons.map((i) => (
+                    <img className="icons" src={`https://skillicons.dev/icons?i=${i}&theme=dark`} alt="icons"/>
+              ))
+              }
+          </div>
+      </div>
       </header>
         <div className="Topic-divisor">
             <div className="line"/>

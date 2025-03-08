@@ -1,4 +1,4 @@
-import defaultImageIcon from "./assets/defaultImageIcon.png"
+import "./ImageInput.css"
 import {CiImageOn} from "react-icons/ci";
 import {createRef, useRef, useState} from "react";
 
