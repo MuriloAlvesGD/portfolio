@@ -1,6 +1,7 @@
-import "./ImageInput.css"
-import {CiImageOn} from "react-icons/ci";
-import {createRef, useRef, useState} from "react";
+import "./ImageInput.css";
+import { CiImageOn } from "react-icons/ci";
+import { TbTrashXFilled } from "react-icons/tb";
+import { createRef, useRef, useState } from "react";
 
 function ImageInput() {
     const [files, setFiles] = useState([null]);
@@ -27,29 +28,36 @@ function ImageInput() {
         } else {
             inputRefs.current[index].current.value = null;
         }
-    }
+    };
 
     return (
-        <div>
-            {files.map( (file, i) => (
-                    <div key={i}>
-                        <span onClick={() => handleDeleteImg(i)}>X</span>
-                        <label htmlFor={`img${i}`}>
-                            {file ? <img src={URL.createObjectURL(file)} alt={`Imagem ${i}`} style={{"aspect-ratio": "1", "width":"200px"}}/> : <CiImageOn/>}
-                        </label>
-                        <input
-                            id={`img${i}`}
-                            type='file'
-                            name={`attachment${i+1}`}
-                            accept="image/png, image/jpeg"
-                            onChange={(e) => handleImagesChange(e.target.files[0], i)}
-                            ref={inputRefs.current[i]}
-                            style={{"display": "none"}}
-                        />
-                    </div>
-                ))}
+        <div id="image-container">
+            {files.map((file, i) => (
+                <div key={i} className="image-input">
+                    {file && <span onClick={() => handleDeleteImg(i)}><TbTrashXFilled /></span>}
+                    <label htmlFor={`img${i}`}>
+                        {file ? (
+                            <img
+                                src={URL.createObjectURL(file)}
+                                alt={`Imagem ${i}`}
+                            />
+                        ) : (
+                            <CiImageOn />
+                        )}
+                    </label>
+                    <input
+                        id={`img${i}`}
+                        type="file"
+                        name={`attachment${i + 1}`}
+                        accept="image/png, image/jpeg"
+                        onChange={(e) => handleImagesChange(e.target.files[0], i)}
+                        ref={inputRefs.current[i]}
+                        style={{ display: "none" }}
+                    />
+                </div>
+            ))}
         </div>
-    )
+    );
 }
 
-export default ImageInput
+export default ImageInput;
