@@ -1,6 +1,7 @@
 import "./floatingMenu.css";
 import { ImCross } from "react-icons/im";
-import { IoLogOut } from "react-icons/io5";
+import { RiInstagramFill } from "react-icons/ri";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function FloatingMenu() {
     return (
@@ -11,7 +12,18 @@ function FloatingMenu() {
                     <ImCross />
                 </label>
                 <nav id="navBtn">
-                    <IoLogOut className="btn" />
+                    <a href={"https://www.instagram.com/murilo.adm"} target="_blank" rel="noopener noreferrer">
+                        <RiInstagramFill className="btn" />
+                    </a>
+                    <a href={"https://github.com/MuriloAlvesGD"} target="_blank" rel="noopener noreferrer">
+                        <FaGithub className="btn" />
+                    </a>
+                    <a
+                        href={"https://www.linkedin.com/in/murilo-s-alves-86920727b"}
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <FaLinkedin className="btn" />
+                    </a>
                 </nav>
             </div>
         </div>
