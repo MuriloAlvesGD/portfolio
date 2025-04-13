@@ -70,7 +70,7 @@ function App() {
                                     {p.title}
                                 </h3>
                             </a>
-                            <img src={`../public/projectsImage/${p.title}.png` || defaultImageIcon} alt={"project"} className="project-img" />
+                            <img src={`/projectsImage/${p.title}.png`} alt="project" className="project-img" onError={(e) => { e.target.onerror = null; e.target.src = defaultImageIcon; }} />
                         </div>
                         <div className="description">
                             <h3>DESCRIÇÃO</h3>
