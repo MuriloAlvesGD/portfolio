@@ -31,9 +31,9 @@ export default function Icons({ langs }) {
 
 
     return (
-        <Carousel marginProp={"0"} arrowSize={"2rem"}>
+        <Carousel marginProp={"0"} arrowSize={"clamp(0.5rem, 0.4rem + 4vw, 2rem)"}>
             {langs.map((l) => (
-                <div style={{color: langColor[l.toLowerCase()]}}>
+                <div style={{color: langColor[l.toLowerCase()], fontSize: "clamp(2.5rem, 2rem + 4vw, 4rem)"}}>
                     {langIcon[l.toLowerCase()] || null}
                 </div>
             ))}

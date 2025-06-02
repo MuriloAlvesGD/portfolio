@@ -30,7 +30,7 @@ function App() {
 
     return (
         <div className="App">
-            <h1 id="title">PORTFÓLIO - MuriloAlvesGD</h1>
+            <h1 id="title">PORTFÓLIO<br/>MuriloAlvesGD</h1>
             <header className="App-header">
                 <div id="profile-card">
                     <img id="profile-img" src={profileImage} alt="foto de perfil" />
@@ -46,7 +46,7 @@ function App() {
                         src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuriloAlvesGD&layout=compact&hide_border=true&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=2B2B2EFF"
                         alt="infos"
                     />
-                    <div>
+                    <div id="git-icons">
                         {icons.map((i) => (
                             <img className="icons" src={`https://skillicons.dev/icons?i=${i}&theme=dark`} alt="icons" />
                         ))}
@@ -58,11 +58,11 @@ function App() {
                 <span>PROJETOS</span>
                 <div className="line" />
             </div>
-            <Carousel marginProp={"20px"} arrowSize={"3rem"}>
+            <Carousel marginProp={"20px"} arrowSize={"clamp(2rem, 1rem + 5vw, 3rem)"}>
                 {projectsJSON.map((p) => (
                     <div className="project-card">
                         <div className="container-img">
-                            <div className={"logo"}>
+                            <div className="logo">
                                 <Icons langs={p.technology} />
                             </div>
                             <a href={p.git_link} target="_blank" rel="noopener noreferrer">
@@ -86,14 +86,14 @@ function App() {
             </div>
             <div className="contact-box">
                 <form
-                    action="https://formsubmit.co/b0fb19526804b04fc8334b35fc641c2d"
+                    action="https://formsubmit.co/568a02d6bcaa9401e6e5456dae10e152"
                     method="post"
                     target="_self"
                     encType="multipart/form-data">
                     <input type="hidden" name="_template" value="box" />
                     <input type="hidden" name="_captcha" value="false" />
                     <input type="text" name="_honey" id="honeyPot" />
-                    <input type="hidden" name="_next" value="http://localhost:3000/" />
+                    <input type="hidden" name="_next" value="http://192.168.1.8:5173/" />
                     <input type="hidden" name="_subject" value={subject} />
                     <input
                         type="hidden"
@@ -125,8 +125,8 @@ function App() {
                     <label htmlFor="phone">telefone</label>
                     <h4>DESCRIÇÃO</h4>
                     <textarea required id="description" name="Descrição"></textarea>
-                    <h4>IMAGENS ANEXADAS</h4>
-                    <ImageInput />
+                    {/*<h4>IMAGENS ANEXADAS</h4>
+                    <ImageInput /> */}
                     {regex.test(email) ? (
                         <button id="formSubmit" type="submit">
                             ENVIAR
