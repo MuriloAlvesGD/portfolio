@@ -12,7 +12,7 @@ function FloatingMenu() {
                     <ImCross />
                 </label>
                 <nav id="navBtn">
-                    <a href={"https://www.instagram.com/murilo.adm"} target="_blank" rel="noopener noreferrer">
+                    <a href={"https://www.instagram.com/murilo.dev_"} target="_blank" rel="noopener noreferrer">
                         <RiInstagramFill className="btn" />
                     </a>
                     <a href={"https://github.com/MuriloAlvesGD"} target="_blank" rel="noopener noreferrer">
