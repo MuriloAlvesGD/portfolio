@@ -93,7 +93,7 @@ function App() {
                     <input type="hidden" name="_template" value="box" />
                     <input type="hidden" name="_captcha" value="false" />
                     <input type="text" name="_honey" id="honeyPot" />
-                    <input type="hidden" name="_next" value="http://192.168.1.8:5173/" />
+                    <input type="hidden" name="_next" value="https://MuriloAlvesGD.github.io/portfolio" />
                     <input type="hidden" name="_subject" value={subject} />
                     <input
                         type="hidden"
