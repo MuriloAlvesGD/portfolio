@@ -1,7 +1,7 @@
 {
   "homepage":"https://MuriloAlvesGD.github.io/portfolio",
   "name": "portfolio",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "author": "MuriloAlvesGD",
   "private": true,
   "dependencies": {
@@ -18,7 +18,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview",
+    "server": "vite preview",
     "predeploy": "npm run build",
     "deploy":"gh-pages -d dist"
   },

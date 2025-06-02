@@ -47,8 +47,8 @@ function App() {
                         alt="infos"
                     />
                     <div id="git-icons">
-                        {icons.map((i) => (
-                            <img className="icons" src={`https://skillicons.dev/icons?i=${i}&theme=dark`} alt="icons" />
+                        {icons.map((i, index) => (
+                            <img key={index} className="icons" src={`https://skillicons.dev/icons?i=${i}&theme=dark`} alt="icons" />
                         ))}
                     </div>
                 </div>
@@ -59,8 +59,8 @@ function App() {
                 <div className="line" />
             </div>
             <Carousel marginProp={"20px"} arrowSize={"clamp(2rem, 1rem + 5vw, 3rem)"}>
-                {projectsJSON.map((p) => (
-                    <div className="project-card">
+                {projectsJSON.map((p, index) => (
+                    <div key ={index} className="project-card">
                         <div className="container-img">
                             <div className="logo">
                                 <Icons langs={p.technology} />
@@ -70,7 +70,7 @@ function App() {
                                     {p.title}
                                 </h3>
                             </a>
-                            <img src={`/projectsImage/${p.title}.png`} alt="project" className="project-img" onError={(e) => { e.target.onerror = null; e.target.src = defaultImageIcon; }} />
+                            <img src={`/projectsImages/${p.title}.png`} alt="project" className="project-img" onError={(e) => { e.target.onerror = null; e.target.src = defaultImageIcon; }} />
                         </div>
                         <div className="description">
                             <h3>DESCRIÇÃO</h3>
