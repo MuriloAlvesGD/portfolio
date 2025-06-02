@@ -69,8 +69,8 @@ function App() {
                                 <h3 className="project-title" href={p.git_link}>
                                     {p.title}
                                 </h3>
-                            </a>
-                            <img src={`/projectsImages/${p.title}.png`} alt="project" className="project-img" onError={(e) => { e.target.onerror = null; e.target.src = defaultImageIcon; }} />
+                            </a>       {/*Coloque o base url pra rodar a desgraça do deploy*/}
+                            <img src={`/portfolio/projectsImages/${p.title}.png`} alt="project" className="project-img" onError={(e) => { e.target.onerror = null; e.target.src = defaultImageIcon; }} />
                         </div>
                         <div className="description">
                             <h3>DESCRIÇÃO</h3>
