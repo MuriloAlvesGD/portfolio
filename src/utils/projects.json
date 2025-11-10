@@ -1,5 +1,17 @@
 [
     {
+        "title": "FOCUS_HAVEN",
+        "technology": ["REACT"],
+        "git_link": "https://muriloalvesgd.github.io/focus_info/",
+        "description": "Focus Haven é uma extensão do Google que auxilia o usuário a eliminar distrações e aumentar sua concentração e produtividade."
+    },
+    {
+        "title": "DEV_NOTEPAD",
+        "technology": ["TYPESCRIPT","REACT", "CSS"],
+        "git_link": "https://muriloalvesgd.github.io/dev-notepad/",
+        "description": "Aplicação de Anotações e TO-DO List funcionando inteiramento no navegador."
+    },
+    {
         "title": "NEXUS_FORUM",
         "technology": ["HTML", "CSS"],
         "git_link": "https://muriloalvesgd.github.io/Forum_MultiDisciplinar/html/index.html",
