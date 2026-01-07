@@ -43,7 +43,7 @@ function App() {
                 <div id="git-img">
                     <img
                         id="stats"
-                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuriloAlvesGD&layout=compact&hide_border=true&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=2B2B2EFF"
+                        src="https://streak-stats.demolab.com?user=muriloalvesgd&theme=dark&hide_border=true&short_numbers=true"
                         alt="infos"
                     />
                     <div id="git-icons">
