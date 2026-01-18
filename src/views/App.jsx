@@ -1,17 +1,17 @@
 //COMPONENTS
-import Carousel from "./components/Carousel/Carousel.jsx";
-import ImageInput from "./components/ImageInput/ImageInput.jsx";
-import PhoneInput from "./components/PhoneInput.jsx";
+import Carousel from "../components/Carousel/Carousel.jsx";
+import ImageInput from "../components/ImageInput/ImageInput.jsx";
+import PhoneInput from "../components/PhoneInput.jsx";
 
 //ASSETS
 import "./App.css";
-import defaultImageIcon from "./assets/defaultImageIcon.png";
-import profileImage from "./assets/profileImage.jpeg";
-import Icons from "./utils/Icons.jsx";
+import defaultImageIcon from "../style/assets/defaultImageIcon.png";
+import profileImage from "../style/assets/profileImage.jpeg";
+import Icons from "../style/Icons.jsx";
 
 //OUTROS
 import { useState } from "react";
-import projectsJSON from "./utils/projects.json";
+import projectsJSON from "/projects.json";
 
 function App() {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
