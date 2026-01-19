@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: var(--davys-gray);
+  background-color: var(--background);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -74,7 +74,7 @@
   height: fit-content;
   width: 20%;
   padding: 20px;
-  background-color: var(--davys-gray);
+  background-color: var(--background);
   border-radius: 25px;
   box-shadow:
     -2px -2px 6px rgba(255, 255, 255, 0.1),
@@ -132,8 +132,8 @@ span:not(#image-container span) {
   max-width: 400px;
   padding: 15px;
   border-radius: 25px;
-  color: var(--cornsilk);
-  background-color: var(--davys-gray);
+  color: var(--content);
+  background-color: var(--background);
   filter: brightness(120%);
   box-shadow:
     -2px -2px 5px rgba(255, 255, 255, 0.1),
@@ -170,7 +170,7 @@ span:not(#image-container span) {
   font-size: 60px;
   bottom: 0;
   right: -5px;
-  background-color: var(--davys-gray);
+  background-color: var(--background);
   padding: 5px 0 0 5px;
   border-radius: 10px 0 0 0;
   line-height: 0;
@@ -186,7 +186,7 @@ span:not(#image-container span) {
     position: absolute;
     top: -15px;
     right: 5px;
-    box-shadow: 3px 3px 0 var(--davys-gray);
+    box-shadow: 3px 3px 0 var(--background);
 }
 
 .logo::before {
@@ -199,7 +199,7 @@ span:not(#image-container span) {
     position: absolute;
     bottom: 4px;
     left: -15px;
-    box-shadow: 3px 3px 0 var(--davys-gray);
+    box-shadow: 3px 3px 0 var(--background);
 }
 
 .project-title {
@@ -210,10 +210,10 @@ span:not(#image-container span) {
   top:0;
   font-size: clamp(0.5rem, 0.5rem + 2vw, 2rem);
   word-wrap: break-word;
-  color: var(--cornsilk);
+  color: var(--content);
   background: linear-gradient(to bottom, rgba(43, 43, 46, 1) 0%, rgba(43, 43, 46, 0.6) 60%, rgba(255, 255, 255, 0) 100%);
   filter: blur(100%);
-  text-shadow: 2px 2px 10px var(--davys-gray);
+  text-shadow: 2px 2px 10px var(--background);
 }
 
 .container-img {
@@ -238,7 +238,7 @@ span:not(#image-container span) {
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: var(--cornsilk);
+    color: var(--content);
     text-align: center;
 
     #honeyPot {
@@ -257,7 +257,7 @@ span:not(#image-container span) {
         inset 2px 2px 3px rgba(0, 0, 0, 0.6),
         inset -2px -2px 3px rgba(255, 255, 255, 0.1);
       resize: none;
-      color: var(--cornsilk);
+      color: var(--content);
     }
 
     input {
@@ -294,7 +294,7 @@ span:not(#image-container span) {
   font-weight: bold;
   font-size: 18px;
   background-color: #212124;
-  color: var(--davys-gray);
+  color: var(--background);
   text-shadow:
     -1px -1px 1px rgba(255, 255, 255, 0.1),
     1px 1px 1px rgba(0, 0, 0, 0.6);
@@ -306,17 +306,17 @@ span:not(#image-container span) {
 
 #formSubmit:hover {
   transform: translateY(-1px);
-  background-color: var(--persimmon);
+  background-color: var(--contrast);
   box-shadow:
     -2px -2px 5px rgba(249, 207, 158, 0.3),
     2px 2px 5px rgba(0, 0, 0, 0.4);
-  color: var(--cornsilk);
+  color: var(--content);
 }
 
 #formSubmit:active {
   transform: translateY(1px);
   background-color: #212124;
-  color: var(--davys-gray);
+  color: var(--background);
   text-shadow:
     -1px -1px 1px rgba(255, 255, 255, 0.1),
     1px 1px 1px rgba(0, 0, 0, 0.6);

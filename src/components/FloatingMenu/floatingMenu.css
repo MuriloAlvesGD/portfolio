@@ -1,30 +1,36 @@
-#top-bar {
+#controller {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     position: fixed;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     top: 0;
-    right: 0;
-    margin: 1rem;
+    left: 0;
+    margin: 1rem 1rem;
     gap: 0.6rem;
     z-index: 99;
     line-height: 0;
     filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.5));
 }
 
-#labelMenu {
-    color: var(--cornsilk);
-    height: fit-content;
-    width: fit-content;
-    transition: 0.5s ease-in;
-    rotate: 225deg;
+#labelIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    color: var(--background);
+    background-color: var(--content);
     padding: 1rem;
-    border-radius: 25px;
-    background-color: var(--persimmon);
+    border-radius: 10px;
     z-index: 1;
+    
+    #icon {
+        rotate: 225deg;
+        transition: 0.5s ease-in;
+    }
+    
 }
-#labelMenu:hover {
+#labelIcon:hover {
     cursor: pointer;
 }
 
@@ -32,35 +38,37 @@
     display: none;
 }
 
-input:checked ~ #labelMenu {
-    rotate: 0deg;
-    background-color: #df5201;
+#menuBtn:checked ~ #labelIcon {
+    #icon {
+        rotate: 0deg;
+    }
 }
 
-#menuBtn:checked ~ #navBtn {
+#menuBtn:checked ~ #navBar {
     transform: translateX(0);
 }
 
-#navBtn {
-    transform: translateX(300%);
+#navBar {
+    transform: translateX(-300%);
     display: flex;
+    flex-direction: column;
     height: fit-content;
     width: fit-content;
     padding: 10px 20px;
-    border-radius: 25px;
+    border-radius: 10px;
     gap: 1rem;
     transition: 0.5s ease-in-out;
-    background-color: var(--persimmon);
-    color: var(--cornsilk);
+    background-color: var(--content);
+    color: var(--background);
 
     .btn {
-        color: var(--cornsilk);
-        font-size: 34px;
+        color: var(--background);
+        width: 34px;
         transition: 0.2s ease-in;
     }
 }
 
-#navBtn .btn:hover {
+#navBar .btn:hover {
     scale: 1.2;
     opacity: 0.9;
     filter: drop-shadow(0 0 2px white);

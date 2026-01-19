@@ -13,7 +13,7 @@ import Icons from "../style/Icons.jsx";
 import { useState } from "react";
 import projectsJSON from "/projects.json";
 
-function App() {
+function Home() {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const icons = ["java", "spring", "postgres", "mongodb", "js", "nodejs", "react", "html", "css"];
     const [email, setEmail] = useState("");
@@ -140,4 +140,4 @@ function App() {
     );
 }
 
-export default App;
+export default Home;
