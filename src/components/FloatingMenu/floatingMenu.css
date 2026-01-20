@@ -62,7 +62,7 @@
     color: var(--background);
 
     .btn {
-        color: var(--background);
+        fill: var(--background);
         width: 34px;
         transition: 0.2s ease-in;
     }
