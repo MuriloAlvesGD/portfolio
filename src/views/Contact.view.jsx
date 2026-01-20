@@ -21,7 +21,7 @@ function ContactView() {
             <section id="social-container">
                 <a href="https://github.com/muriloalvesgd">
                     <PixelIcons icon="gitHub" className="social-icon" />
-                </a >
+                </a>
                 {/*GITHUB*/}
                 <a href="https://www.linkedin.com/in/murilo-s-alves-86920727b/">
                     <PixelIcons icon="linkedin" className="social-icon" />
@@ -32,46 +32,49 @@ function ContactView() {
                 </a>
                 {/*INSTAGRAM*/}
             </section>
-            <main id="form-container">
-                <form
-                    action="https://formsubmit.co/568a02d6bcaa9401e6e5456dae10e152"
-                    method="post"
-                    target="_self"
-                    encType="multipart/form-data">
-                    <input type="hidden" name="_template" value="box" />
-                    <input type="hidden" name="_captcha" value="false" />
-                    <input type="text" name="_honey" id="honeyPot" />
-                    <input type="hidden" name="_next" value="https://MuriloAlvesGD.github.io/portfolio" />
-                    <input type="hidden" name="_subject" value={subject} />
-                    <input
-                        type="hidden"
-                        name="_blacklist"
-                        value="padrão de spam, termo banido, oferta especial, clique aqui, ganhe dinheiro rápido, promoção exclusiva, grátis, sem custo, produto milagroso, última chance, não perca, urgente, confidencial, apenas hoje, inscrição gratuita, satisfação garantida, risco zero, aumente seu tráfego, melhore sua vida, venda rápida"
-                    />
-                    <h2>QUE TAL ME MANDAR UM E-MAIL?</h2>
-                    <input id="name" type="text" name="nome" placeholder="" onChange={(e) => handleSubject(e)} />
-                    <label htmlFor="name">seu nome</label>
-                    <input
-                        required
-                        id="email"
-                        type="email"
-                        name="email"
-                        placeholder=""
-                        value={email}
-                        onChange={(e) => handleEmailChange(e)}
-                    />
-                    <label htmlFor="email">seu e-mail*</label>
-                    <h4>MENSAGEM*</h4>
-                    <textarea required id="message" name="mensagem"></textarea>
-                    {regex.test(email) ? (
-                        <button id="formSubmit" type="submit">
-                            ENVIAR
-                        </button>
-                    ) : (
-                        ""
-                    )}
-                </form>
-            </main>
+            <form
+                id="form-container"
+                action="https://formsubmit.co/568a02d6bcaa9401e6e5456dae10e152"
+                method="post"
+                target="_self"
+                encType="multipart/form-data">
+                <input type="hidden" name="_template" value="box" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="text" name="_honey" id="honeyPot" />
+                <input type="hidden" name="_next" value="https://MuriloAlvesGD.github.io/portfolio" />
+                <input type="hidden" name="_subject" value={subject} />
+                <input
+                    type="hidden"
+                    name="_blacklist"
+                    value="padrão de spam, termo banido, oferta especial, clique aqui, ganhe dinheiro rápido, promoção exclusiva, grátis, sem custo, produto milagroso, última chance, não perca, urgente, confidencial, apenas hoje, inscrição gratuita, satisfação garantida, risco zero, aumente seu tráfego, melhore sua vida, venda rápida"
+                />
+                <h2>QUE TAL ME MANDAR UM E-MAIL?</h2>
+                <input
+                    autocomplete="off"
+                    id="name"
+                    type="text"
+                    name="nome"
+                    placeholder=""
+                    onChange={(e) => handleSubject(e)}
+                />
+                <label htmlFor="name">seu nome</label>
+                <input
+                    required
+                    autocomplete="off"
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder=""
+                    value={email}
+                    onChange={(e) => handleEmailChange(e)}
+                />
+                <label htmlFor="email">seu e-mail*</label>
+                <h4>MENSAGEM*</h4>
+                <textarea required id="message" name="mensagem"></textarea>
+                <button id="form-submit" type="submit">
+                    ENVIAR
+                </button>
+            </form>
         </div>
     );
 }
