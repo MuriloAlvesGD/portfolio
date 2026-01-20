@@ -1,0 +1,71 @@
+#home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;
+    background-color: var(--background);
+    color: var(--content);
+}
+
+#about-container {
+    width: fit-content;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background-color: var(--content);
+    color: var(--background);
+    padding: 10px;
+    border-radius: 25px;
+}
+
+#about-left-side {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    padding: 10px;
+    width: 12vw;
+    gap: 10px;
+}
+
+#about-right-side {
+    width: 35vw;
+    padding: 10px;
+    text-align: justify;
+    
+    h1 {
+        margin-top: 0;
+    }
+}
+
+#my-picture {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#my-skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.skill-icons {
+    margin: 5px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#pills-container {
+    width: calc(47vw + 60px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+}
+
+.pill {
+    width: 40vw;
+    text-align: center;
+    font-size: clamp(15px, 1px, 20px);
+    /*color: var(--contrast);*/
+    
+}

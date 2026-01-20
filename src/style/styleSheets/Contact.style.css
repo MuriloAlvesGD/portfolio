@@ -1,0 +1,44 @@
+#contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    height: 100vh;
+}
+
+#honeyPot {
+    display: none;
+}
+
+#social-container {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    box-shadow:
+        inset 2px 2px 3px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 3px rgba(255, 255, 255, 0.2);
+    padding: 30px 15px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.social-icon {
+    aspect-ratio: 1;
+    fill: black;
+    width: 30px;
+    opacity: 0.5;
+    transition: 0.3s ease-in;
+}
+
+.social-icon:hover {
+    cursor: pointer;
+    scale: 1.2;
+    opacity: 1;
+    fill: var(--content);
+    filter: drop-shadow(1px 1px 10px white);
+}
