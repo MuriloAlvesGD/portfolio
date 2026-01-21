@@ -1,0 +1,59 @@
+#certificates-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    color: var(--content);
+    padding: 50px 0;
+}
+
+.certificate {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px 0 50px;
+    box-sizing: border-box;
+}
+
+.certificate-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 10px 0 auto 20px;
+    gap: 5px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow:
+        inset 2px 2px 3px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 3px rgba(255, 255, 255, 0.1);
+}
+
+.certificate-year {
+    font-size: 40px;
+    width: 5%;
+    margin: 0 5% 0 10%;
+    background-color: var(--background);
+    padding: 10px;
+}
+
+#year-line {
+    height: 70%;
+    z-index: -1;
+    position: absolute;
+    width: 0;
+    border: 5px solid var(--content);
+    margin-left: calc(12.5% + 10px);
+}
+
+.certificate-img {
+    border-radius: 10px;
+    width: 30%;
+    box-shadow:
+        -3px -3px 5px rgba(255, 255, 255, 0.1),
+        5px 5px 5px rgba(0, 0, 0, 0.4);
+}

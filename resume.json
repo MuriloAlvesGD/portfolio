@@ -1,0 +1,50 @@
+[
+    {
+        "title": "15TH PIC - OBMEP 2019 MEDALHA DE BRONZE",
+        "year": 2019,
+        "certificate_pages": ["15TH_PIC_OBMEP"],
+        "institution":"IMPA",
+        "duration_type":"ANO",
+        "duration": 1
+    },
+    {
+        "title": "MEDALHA DE BRONZE - BIOGENESIS 2022",
+        "year": 2022,
+        "certificate_pages": ["BRONZE_BIOGENESIS"],
+        "institution":"BIOGENESIS",
+        "duration_type":"",
+        "duration": 0
+    },
+    {
+        "title": "CONCLUSÃO CS50X",
+        "year": 2025,
+        "certificate_pages": ["CS50X"],
+        "institution":"HAVARD",
+        "duration_type":"DESAFIOS",
+        "duration": 11
+    },
+    {
+        "title": "CLOUD COM SWIFT / HACKATRUCK",
+        "year": 2024,
+        "certificate_pages": ["HACKATRUCK_P1", "HACKATRUCK_P2"],
+        "institution":"INSTITUTO ELDORADO",
+        "duration_type":"HORAS",
+        "duration": 100
+    },
+    {
+        "title": "SENSORIAMENTO PARA INDÚSTRIAS",
+        "year": 2025,
+        "certificate_pages": ["SENSORIAMENTO_P1", "SENSORIAMENTO_P2"],
+        "institution":"VIRTUS",
+        "duration_type":"HORAS",
+        "duration": 20
+    },
+    {
+        "title": "MEDALHA DE PRATA - OBBS 2022",
+        "year": 2022,
+        "certificate_pages": ["SILVER_OBBS"],
+        "institution":"PUC",
+        "duration_type":"",
+        "duration": 0
+    }
+]
