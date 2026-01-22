@@ -18,7 +18,7 @@ function FloatingMenu() {
                 <PixelIcons icon="user" className="btn" onClick={() => navigate("/")} /> {/* HOME */}
                 <PixelIcons icon="cards" className="btn" onClick={() => navigate("/certificates")} />{" "}
                 {/* CERTIFICADOS */}
-                <PixelIcons icon="troph" className="btn" onClick={() => navigate("/projects")} /> {/* PROJETOS */}
+                <PixelIcons icon="troph" className="btn" onClick={() => navigate("/projects/0")} /> {/* PROJETOS */}
                 <PixelIcons icon="messageNew" className="btn" onClick={() => navigate("/contact")} /> {/* CONTATO */}
                 <PixelIcons icon="moon" className="btn" /> {/* LIGHT/DARK MODE */}
             </nav>

@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import FloatingMenu from "../components/FloatingMenu/FloatingMenu";
 import HomeView from "../views/Home.view";
 import ContactView from "../views/Contact.view";
 import CertificatesView from "../views/Certificates.view";
-import FloatingMenu from "../components/FloatingMenu/FloatingMenu";
+import ProjectsView from "../views/Projects.view";
 
 function Router() {
     return (
@@ -11,6 +12,7 @@ function Router() {
             <Routes>
                 <Route path="/" element={<HomeView />} />
                 <Route path="/certificates" element={<CertificatesView />} />
+                <Route path="/projects/:id" element={<ProjectsView />} />
                 <Route path="/contact" element={<ContactView />} />
             </Routes>
         </BrowserRouter>
