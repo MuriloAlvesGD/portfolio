@@ -8,6 +8,7 @@ function ProjectsView() {
     const [mainProject, setMainProject] = useState(0);
     const navigate = useNavigate();
     const { id } = useParams();
+    const [selection, setSelection] = useState([[]]);
 
     useEffect(() => {
         const temp = parseInt(id);
@@ -17,17 +18,38 @@ function ProjectsView() {
         } else {
             navigate("/projects/0");
         }
+
+        const topLimit = 5;
+        if (projectsJSON.length <= topLimit) {
+            setSelection = [projectsJSON];
+        } else {
+            let temp = [];
+            let min = 0;
+            let max = topLimit;
+
+            while (max < projectsJSON.length) {
+                temp.push(projectsJSON.slice(min, max));
+                min += topLimit;
+                max += topLimit;
+            }
+            max = max > projectsJSON.length ? projectsJSON.length : max;
+            temp.push(projectsJSON.slice(min, max));
+            setSelection(temp);
+            console.log(temp);
+        }
     }, [navigate]);
 
     return (
-        <main id="projects-container">
+        <main id="main-container">
             <div id="main-project">
                 <div id="top-section">
-                    <img
-                        id="main-img"
-                        src={`/portfolio/projectsImages/${projectsJSON[mainProject].title}.png`}
-                        alt={projectsJSON[mainProject].title}
-                    />
+                    <a href={projectsJSON[mainProject].git_link} target="_blank" rel="noopener noreferrer">
+                        <img
+                            id="main-img"
+                            src={`/portfolio/projectsImages/${projectsJSON[mainProject].title}.png`}
+                            alt={projectsJSON[mainProject].title}
+                        />
+                    </a>
                     <div id="short-info">
                         <h1 id="project-title">{projectsJSON[mainProject].title.replaceAll("_", " ")}</h1>
                         <div id="project-stacks">
@@ -46,18 +68,22 @@ function ProjectsView() {
             </div>
             <h1 id="section-title">DEMAIS PROJETOS</h1>
             <div id="projects-selector">
-                <Carousel marginProp={"15px"} arrowSize={"clamp(4rem, 1rem + 5vw, 6rem)"}>
-                    {projectsJSON.map((p, i) =>
-                        i !== mainProject ? (
-                            <img
-                                key={i}
-                                className="projects-icon"
-                                src={`/portfolio/projectsImages/${p.title}.png`}
-                                onClick={() => navigate(`/projects/${i}`)}
-                                alt={p.title}
-                            />
-                        ) : null
-                    )}
+                <Carousel marginProp={"0"} arrowSize={"500px"}>
+                    {selection.map((projects, p_index) => (
+                        <div key={p_index} className="projects-container">
+                            {projects.map((p, i) =>
+                                p.title !== projectsJSON[mainProject].title ? (
+                                    <img
+                                        key={i}
+                                        className="projects-icon"
+                                        src={`/portfolio/projectsImages/${p.title}.png`}
+                                        onClick={() => navigate(`/projects/${p.id}`)}
+                                        alt={p.title}
+                                    />
+                                ) : null
+                            )}
+                        </div>
+                    ))}
                 </Carousel>
             </div>
         </main>

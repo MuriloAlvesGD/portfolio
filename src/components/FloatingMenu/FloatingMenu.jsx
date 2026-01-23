@@ -20,7 +20,7 @@ function FloatingMenu() {
                 {/* CERTIFICADOS */}
                 <PixelIcons icon="troph" className="btn" onClick={() => navigate("/projects/0")} /> {/* PROJETOS */}
                 <PixelIcons icon="messageNew" className="btn" onClick={() => navigate("/contact")} /> {/* CONTATO */}
-                <PixelIcons icon="moon" className="btn" /> {/* LIGHT/DARK MODE */}
+                {/* <PixelIcons icon="moon" className="btn" />  LIGHT/DARK MODE */}
             </nav>
         </div>
     );
