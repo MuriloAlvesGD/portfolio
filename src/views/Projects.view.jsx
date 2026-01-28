@@ -1,6 +1,6 @@
 import "../style/styleSheets/Projects.style.css";
 import Carousel from "/src/components/Carousel/Carousel";
-import projectsJSON from "/projects.json";
+import projectsJSON from "../data/projects.json";
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -10,15 +10,19 @@ function ProjectsView() {
     const { id } = useParams();
     const [selection, setSelection] = useState([[]]);
 
+    
+    // Resgate o ID da URL para atualizar o Main Project
     useEffect(() => {
         const temp = parseInt(id);
 
+        // Checa se o id é válido, se não retorna o projeto padrão
         if (temp >= 0 && temp < projectsJSON.length) {
             setMainProject(temp);
         } else {
             navigate("/projects/0");
         }
 
+        // Separação para sugestão de projetos
         const topLimit = 5;
         if (projectsJSON.length <= topLimit) {
             setSelection(projectsJSON);

@@ -6,6 +6,22 @@ import CertificatesView from "../views/Certificates.view";
 import ProjectsView from "../views/Projects.view";
 
 function Router() {
+    
+    //Not found cria o componente de página 404 nos padrões do react
+    const NotFound = () => {
+        return (
+            <div
+                style={{
+                    background: "black",
+                    height: "100vh",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center"
+                }}>
+                <img style={{ height: "100%" }} src="https://httpcats.com/404.jpg" alt="404 Not Found" /> {/*Puxa a imagem do httpcats*/}
+            </div>
+        );
+    };
     return (
         <BrowserRouter basename="/portfolio">
             <FloatingMenu />
@@ -14,6 +30,7 @@ function Router() {
                 <Route path="/certificates" element={<CertificatesView />} />
                 <Route path="/projects/:id" element={<ProjectsView />} />
                 <Route path="/contact" element={<ContactView />} />
+                <Route path="*" element={<NotFound />} />
             </Routes>
         </BrowserRouter>
     );

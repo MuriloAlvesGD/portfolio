@@ -1,5 +1,6 @@
 import paths from "./paths.json";
 
+// Função para renderizar os svgs dos icones em Pixel Art
 function PixelIcons({ icon, ...props }) {
     // Verificando se o ícone existe
     const Icon = paths[icon];

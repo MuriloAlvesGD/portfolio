@@ -12,7 +12,7 @@ function FloatingMenu() {
         <div id="controller">
             <input type="checkbox" id="menuBtn"></input>
             <label id="labelIcon" htmlFor="menuBtn">
-                <ImCross id="icon" />
+                <ImCross id="icon" /> {/* Não desistalar o REACT ICONS por enquanto */}
             </label>
             <nav id="navBar">
                 <PixelIcons icon="user" className="btn" onClick={() => navigate("/")} /> {/* HOME */}
