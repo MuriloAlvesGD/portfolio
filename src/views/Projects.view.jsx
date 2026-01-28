@@ -21,7 +21,7 @@ function ProjectsView() {
 
         const topLimit = 5;
         if (projectsJSON.length <= topLimit) {
-            setSelection = [projectsJSON];
+            setSelection(projectsJSON);
         } else {
             let temp = [];
             let min = 0;

@@ -148,3 +148,17 @@
         inset 2px 2px 3px rgba(0, 0, 0, 0.6),
         inset -2px -2px 3px rgba(255, 255, 255, 0.1);
 }
+
+@media(max-width: 650px){
+    #social-container{
+        top: 5%;
+        flex-direction: row;
+        padding: 15px 30px;
+    }
+}
+
+@media(max-width: 450px){
+    #form-container{
+        width: 70%;
+    }
+}

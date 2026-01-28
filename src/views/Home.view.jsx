@@ -4,7 +4,7 @@ import Carousel from "/src/components/Carousel/Carousel";
 import "../style/styleSheets/Home.style.css";
 
 function HomeView() {
-    const icons = ["java", "spring", "postgres", "mongodb", "js", "nodejs", "react", "html", "css"];
+    const icons = ["obsidian", "linux", "postman", "nodejs", "mongodb", "md", "git", "c", "bash"];
     return (
         <div id="home-container">
             <section id="about-container">
@@ -24,15 +24,19 @@ function HomeView() {
                 <div id="about-right-side">
                     <h1>Murilo S. Alves</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus neque at ex porttitor
-                        efficitur. Aliquam efficitur porta dapibus. Nullam vel nibh ac arcu venenatis vestibulum.
-                        Quisque purus eros, ullamcorper sit amet nulla ut, faucibus consequat ipsum. In sapien orci,
-                        ultricies quis lectus eget, luctus commodo augue. Suspendisse convallis rutrum arcu eu
-                        fermentum. In elit nibh, tristique sed venenatis ac, scelerisque id mauris. Proin ullamcorper
-                        urna imperdiet ultricies ultrices. Fusce est ex, condimentum quis enim sed, viverra condimentum
-                        dolor. Fusce vitae euismod mauris. Fusce finibus, neque in pellentesque tristique, sapien orci
-                        imperdiet diam, quis ornare nulla lorem quis lectus. Quisque.
+                        Natural de <strong>Lagoa Seca</strong>, uma pequena cidade do interior da{" "}
+                        <strong>Paraíba</strong>, atualmente curso <strong>Sistemas de Informação na Unifacisa</strong>.
+                        Meu foco principal é em <strong>Cyber Segurança</strong> e{" "}
+                        <strong>Programação de Baixo Nível</strong>, utilizando a linguagem <strong>C</strong>.
                     </p>
+                    <p>
+                        Profissionalmente, atuo como <strong>Suporte de T.I.</strong> no{" "}
+                        <strong>Hospital da FAP</strong> (Fundação Assistencial da Paraíba). Essa experiência me permite
+                        aprofundar meus conhecimentos em <strong>Active Directory</strong>,{" "}
+                        <strong>Estrutura e Gerenciamento de Redes</strong>, além de desenvolver habilidades em{" "}
+                        <strong>atendimento ao usuário</strong>.
+                    </p>
+                    <strong>Eu definitivamente não sou o melhor, mas continuo tentando, de novo e de novo.</strong>
                 </div>
             </section>
             <footer id="pills-container">

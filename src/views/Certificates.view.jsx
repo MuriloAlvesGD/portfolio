@@ -7,7 +7,7 @@ function CertificatesView() {
             {resume
                 .sort((a, b) => a.year - b.year)
                 .map((certificate, i) => (
-                    <div className="certificate">
+                    <div key={i} className="certificate">
                     <div id="year-line"></div>
                         <span className="certificate-year">{certificate.year}</span>
                         <img

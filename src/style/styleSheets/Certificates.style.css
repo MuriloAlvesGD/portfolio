@@ -52,8 +52,52 @@
 
 .certificate-img {
     border-radius: 10px;
-    width: 30%;
+    width: 450px;
     box-shadow:
         -3px -3px 5px rgba(255, 255, 255, 0.1),
         5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 1000px) {
+    .certificate {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+    }
+    
+    .certificate-info, .certificate-img {
+        width: 600px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    #year-line {
+        display: none;
+    }
+    
+    #certificates-container {
+        gap: 50px;
+    }
+    
+    .certificate-year {
+        width: fit-content;
+        margin: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    .certificate-info, .certificate-img {
+        width: 450px;
+    }
+}
+
+@media (max-width: 580px) {
+    .certificate-img {
+        width: 80%
+    }
+    
+    .certificate-info {
+        width: calc(80% - 20px);
+    }
 }

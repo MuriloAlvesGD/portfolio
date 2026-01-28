@@ -1,43 +1,50 @@
 [
     {
+        "id":0,
         "title": "FOCUS_HAVEN",
-        "technology": ["REACT"],
+        "technology": ["REACT", "vite", "npm", "nodejs"],
         "git_link": "https://muriloalvesgd.github.io/focus_info/",
         "description": "Focus Haven é uma extensão do Google que auxilia o usuário a eliminar distrações e aumentar sua concentração e produtividade."
     },
     {
+        "id":1,
         "title": "DEV_NOTEPAD",
-        "technology": ["TYPESCRIPT","REACT", "CSS"],
+        "technology": ["TYPESCRIPT","REACT", "npm", "nodejs"],
         "git_link": "https://muriloalvesgd.github.io/dev-notepad/",
         "description": "Aplicação de Anotações e TO-DO List funcionando inteiramento no navegador."
     },
     {
+        "id":2,
         "title": "NEXUS_FORUM",
         "technology": ["HTML", "CSS"],
         "git_link": "https://muriloalvesgd.github.io/Forum_MultiDisciplinar/html/index.html",
         "description": "Primeiro projeto WEB desenvolvido na faculdade para estudar HTML e conceitos iniciais do desenvolvimento WEB."
     },
     {
+        "id":3,
         "title": "MERCADEX",
-        "technology": ["NODEJS", "REACT"],
+        "technology": ["REACT", "vite", "nodejs", "express", "mongodb"],
         "git_link": "https://github.com/MuriloAlvesGD/mercadex",
         "description": "Plataforma de E-commerce desenvolvida usando back-end em Node.JS e front-end em React, juntamente com utilização de JWT para autenticação."
     },
     {
+        "id":4,
         "title": "GRAPH_LIBRARY",
-        "technology": ["JAVASCRIPT"],
+        "technology": ["JAVASCRIPT", "nodejs"],
         "git_link": "https://github.com/MuriloAlvesGD/graph_library",
         "description": "Projeto para estudo de algoritmo de árvore binária, sendo montada uma biblioteca com divisão por autor e ordenação por data de lançamento de livro."
     },
     {
+        "id":5,
         "title": "POKE_CENTER_TCG",
-        "technology": ["NODEJS", "REACT"],
+        "technology": ["REACT", "vite", "nodejs", "express", "mongodb"],
         "git_link": "https://github.com/Projects-Facisa/poke-center-tcg",
         "description": "O PokeCenterTCG é um projeto de e-commerce focado no cenário de TCG de Pokémon. Em primeiro momento temos a visualização administrativa."
     },
     {
+        "id":6,
         "title": "KARLA_NUTRI_AI",
-        "technology": ["NODEJS", "REACT_NATIVE"],
+        "technology": ["REACT", "vite", "nodejs", "express", "mongodb", "gcp"],
         "git_link": "https://github.com/Projects-Facisa/KarlaNutriAI",
         "description": "Aplicativo de nutrição com Inteligência Artificial, o chat com I.A. busca as informações do usuário para gerar os aconselhamentos."
     }
