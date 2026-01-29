@@ -39,7 +39,6 @@ function ProjectsView() {
             max = max > projectsJSON.length ? projectsJSON.length : max;
             temp.push(projectsJSON.slice(min, max));
             setSelection(temp);
-            console.log(temp);
         }
     }, [navigate]);
 
